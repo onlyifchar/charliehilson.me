@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "Alan Sans";
+    src: url("../assets/fonts/alan_sans/AlanSans-VariableFont_wght.ttf");
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Alan Sans";
+    padding: 0%;
+    margin: 0%;
+    overflow: auto;
+}
+header{
+    background-color: rgb(29, 34, 37);
+    box-shadow: -15px -10px 15px rgba(250, 248, 248, 0.12);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid purple;
+    border-bottom-left-radius: 10px;
+    border-right: 2px solid purple;
+    border-bottom-right-radius: 10px;
+    justify-self: center;
+    width: 95vw;
+}
+header #header{
+    text-align: center;
+    font-size: 3em;
+    animation: iconPopUp 0.5s forwards;
+}
+header .nav-container-socials{
+    display: flex;
+    justify-content: flex-end;
+}
+header li{
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 25px;
+    animation: iconPopUp 0.5s forwards;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+header li a:hover{
+    text-decoration: underline;
+    text-decoration-color: purple;
+    font-weight: bold;
+}
+a img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+header .pages-container{
+    display: flex;
+    justify-content: center;
+}
+.pages-container .button-container{
+    border-top: 1px solid purple;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    width: 98%;
+}
+.pages-container .button-container input{
+    margin-right: 25px;
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-right: 1px solid purple;
+    padding-right: 25px;
+
+}
+.pages-container .button-container input:hover{
+    background-color: rgb(255, 255, 255);
+    color: purple;
+    border-radius: 8px;
+    
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.projects-container{
+    box-shadow: -15px -10px 15px rgba(251, 251, 251, 0.117);
+    width: 95vw;
+    height: 95vh;
+    border-radius: 10px;
+    background-color: rgb(29, 34, 37);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-bottom: 2px solid purple;
+    border-right: 2px solid purple;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: scroll;
+}
+.projects-container h2, h3{
+    text-decoration: underline;
+    text-decoration-color: purple;
+    text-decoration-thickness: 3px;
+}
+.projects-container .project-container{
+    margin-top: 50px;
+    padding-left: 20px;
+    text-align: left;
+    justify-self: center;
+    width: 90%;
+    border: 0.5px solid purple;
+    border-radius: 10px;
+    box-shadow: -15px -10px 15px rgba(0, 0, 0, 0.571);
+    animation: popUp 0.5s ease; 
+}
+.projects-container a{
+    color: white;
+    text-decoration: none;
+}
+.projects-container .project-container:hover{
+    animation: hover 100 forwards;
+    cursor: pointer;
+}
+.projects-container p{
+    font-size: 1.5em;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: purple;
+}
+
+@keyframes popUp {
+    from{
+        transform: translateY(20px);
+    }
+}
+@keyframes hover {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+@keyframes iconPopUp {
+    from{
+        transform: translateY(20px);
+    }
+}
+@media (max-width: 768px) {
+        header {
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .nav-container-socials {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+    }
+
+    .pages-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pages-container .button-container input{
+    border-right: 2px solid purple;
+    border-left: 2px solid purple;
+    border-radius: 8px;
+    padding-left: 25px;
+    }
+    .button-container input {
+        font-size: 1.2em;
+        margin: 0.5rem 0;
+    }
+    .projects-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-container p{
+        font-size: 1.1em;
+    }
+}
