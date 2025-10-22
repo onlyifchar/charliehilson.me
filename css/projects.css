@@ -2,6 +2,19 @@
     font-family: "Alan Sans";
     src: url("../assets/fonts/alan_sans/AlanSans-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: "Product Sans Light";
+    src: url("../assets/fonts/google_sans_text/ProductSans-Light.ttf");
+}
+@font-face {
+    font-family: "Product Sans Bold";
+    src: url("../assets/fonts/google_sans_text/ProductSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Product Sans Regular";
+    src: url("../assets/fonts/google_sans_text/ProductSans-Regular.ttf");
+}
+
 body{
     background-color: rgb(0, 0, 0);
     color: white;
@@ -9,6 +22,12 @@ body{
     padding: 0%;
     margin: 0%;
     overflow: auto;
+}
+p{
+    font-family: "Product Sans Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
 }
 header{
     background-color: rgb(29, 34, 37);
@@ -37,15 +56,14 @@ header li{
     margin-right: 25px;
     animation: iconPopUp 0.5s forwards;
 }
+header input:hover{
+    text-decoration-color: purple;
+    cursor: pointer;
+}
 header a{
     text-decoration: none;
     color: white;
     font-size: 0.8em;
-}
-header li a:hover{
-    text-decoration: underline;
-    text-decoration-color: purple;
-    font-weight: bold;
 }
 a img{
     vertical-align: middle;

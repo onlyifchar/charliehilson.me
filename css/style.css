@@ -2,12 +2,31 @@
     font-family: "Alan Sans";
     src: url("../assets/fonts/alan_sans/AlanSans-VariableFont_wght.ttf");
 }
+@font-face {
+    font-family: "Product Sans Light";
+    src: url("../assets/fonts/google_sans_text/ProductSans-Light.ttf");
+}
+@font-face {
+    font-family: "Product Sans Bold";
+    src: url("../assets/fonts/google_sans_text/ProductSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Product Sans Regular";
+    src: url("../assets/fonts/google_sans_text/ProductSans-Regular.ttf");
+}
+
 body{
     background-color: rgb(0, 0, 0);
     color: white;
     font-family: "Alan Sans";
     padding: 0%;
     margin: 0%;
+}
+p{
+    font-family: "Product Sans Light";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
 }
 header{
     background-color: rgb(29, 34, 37);
@@ -36,15 +55,14 @@ header li{
     margin-right: 25px;
     animation: iconPopUp 0.5s forwards;
 }
+header input:hover{
+    text-decoration-color: purple;
+    cursor: pointer;
+}
 header a{
     text-decoration: none;
     color: white;
     font-size: 0.8em;
-}
-header li a:hover{
-    text-decoration: underline;
-    text-decoration-color: purple;
-    font-weight: bold;
 }
 a img{
     vertical-align: middle;
@@ -133,6 +151,87 @@ footer a:hover{
     color: purple;
 }
 
+/* Contact Me Style */
+.contact-container{
+    box-shadow: -15px -10px 15px rgba(251, 251, 251, 0.117);
+    width: 95vw;
+    height: 95vh;
+    border-radius: 10px;
+    background-color: rgb(29, 34, 37);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-bottom: 2px solid purple;
+    border-right: 2px solid purple;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-direction: column;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
+    justify-content: center;
+    justify-self: center;
+    width: 60%;
+    height: 70%;
+    border: 0.5px solid purple;
+    border-radius: 10px;
+    box-shadow: -15px -10px 15px rgba(0, 0, 0, 0.571);
+}
+.form-container h1{
+    font-size: 3em;
+}
+.form-container p{
+    padding: 50px;
+    text-align: center;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    width: 65%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid purple;
+    border-radius: 8px;
+}
+form textarea{
+    width: 70%;
+    height: 150px;
+    border: none;
+    border: none;
+    border-bottom: 3px solid purple;
+    border-radius: 8px;
+    font-size: 15px;
+}
+form button{
+    margin-top: 8px;
+    padding:15px;
+    font-size: 1.3em;
+    font-family: "Product Sans Light";
+    border: none;
+    border-radius: 8px;
+    border-bottom: 3px solid purple;
+}
+form button:hover{
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+/* Animations */ 
+
 @keyframes iconPopUp {
     from{
         transform: translateY(20px);
@@ -190,4 +289,18 @@ footer a:hover{
   .home-container #error-message{
     font-size: 0.5em;
   }
+
+  /* Form container */
+  .form-container{
+    height: 85vh;
+  }
+  form{
+    width: 76vw;
+  }
+  form p{
+    font-size: 10px;
+    text-align: center;
+    padding-right: 100px;
+  }
+
 }

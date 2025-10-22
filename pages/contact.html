@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
+    
+</head>
+<body>
+    <header>
+        <h1 id="header">Charlie Hilson's Portfolio</h1>
+
+        <nav class="nav-container-socials">
+            <ul>
+                <li>
+                    <a href="https://github.com/onlyifchar" target="_blank">
+                        <img src="../assets/images/github.png" alt="github-logo" width="24" height="24">
+                        Github
+                    </a></li>
+                <li>
+                    <a href="http://linkedin.com" target="_blank">
+                        <img src="../assets/images/linkedin.png" alt="linkedin-logo" width="24" height="24">
+                        LinkedIn
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="pages-container">
+            <div class="button-container">
+                <a href="/pages/index.html">
+                    <input type="button" class="btn" value="Home">
+                </a>
+                 <a href="/pages/projects.html">
+                    <input type="button" value="Projects">
+                </a>
+                 </a>
+                 <a href="journey.html">
+                    <input type="button" value="Journey">
+                </a>
+                <a href="contact.html">
+                    <input type="button" value="Contact Me">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <div class="form-container">
+                <h1>Contact Me</h1>
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="7dd421b2-ae1f-407c-9cde-95fabee588a5">
+                    
+                    <input type="text" name="name" required placeholder="Name">
+                    <input type="email" name="email" required placeholder="Email@Domain.com">
+                    <textarea name="message" required></textarea>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit">Submit Form</button>
+                </form>
+                <p>
+                Feel free to reach out using the form above — whether you have a question, feedback, or just want to connect. 
+                I’ll do my best to get back to you as soon as I can, but please be patient as I might not always be able to respond right away. 
+                Thanks for reaching out!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="mailto:charliehilson_@outlook.com" id="email">charliehilson_@outlook.com</a>
+    </footer>
+
+</body>
+</html>
